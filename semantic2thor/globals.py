@@ -6,7 +6,7 @@ try:
 except ImportError:
   tqdm = lambda x, **a: x
 
-DB_PATH = os.path.join(os.path.dirname(__file__), 'data', 'ai2thor.db')
+DB_PATH = os.path.join(os.path.dirname(__file__), 'data', 'ai2thor-lite.db')
 CONN = None
 
 def connect():
