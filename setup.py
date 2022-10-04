@@ -14,8 +14,9 @@ setuptools.setup(
     install_requires=[
         "numpy",
     ],
-    include_package_data=True,
-    package_data={'semantic2thor': ['semantic2thor/data/ai2thor.db']},
+    # include_package_data=True,
+    package_data={'semantic2thor': [
+      'semantic2thor/data/ai2thor.db', 'semantic2thor/data/*']},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GPL3 License"
