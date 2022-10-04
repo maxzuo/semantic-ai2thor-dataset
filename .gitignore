@@ -1,3 +1,8 @@
+# Devel
+.vscode
+u_venv/
+other
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
