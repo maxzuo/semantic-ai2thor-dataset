@@ -1,6 +1,6 @@
 from typing import Any, Dict, List, Optional, Tuple
 
-from .globals import *
+from . import globals
 from .metadata import get_object_names
 import numpy as np
 
@@ -25,15 +25,15 @@ def conceptnet_dict(cache: bool = True) -> Dict[str, np.ndarray]:
   if type(_conceptnet_dict) == dict:
     return _conceptnet_dict
 
-  cur = CONN.execute('SELECT name, embedding FROM conceptnet')
+  cur = globals.CONN.execute('SELECT name, embedding FROM conceptnet')
   if cache:
     _conceptnet_dict = {
       name: np.frombuffer(embedding, dtype=np.float32)
-      for name, embedding in tqdm(cur.fetchall())}
+      for name, embedding in globals.tqdm(cur.fetchall())}
     return _conceptnet_dict
 
   return {name: np.frombuffer(embedding, dtype=np.float32)
-          for name, embedding in tqdm.tqdm(cur.fetchall())}
+          for name, embedding in globals.tqdm.globals.tqdm(cur.fetchall())}
 
 
 def conceptnet(name: str) -> np.ndarray:
@@ -50,7 +50,7 @@ def conceptnet(name: str) -> np.ndarray:
   if type(_conceptnet_dict) == dict:
     return _conceptnet_dict[name.lower().strip()]
 
-  embedding = CONN.execute('SELECT embedding FROM conceptnet WHERE name LIKE ?',
+  embedding = globals.CONN.execute('SELECT embedding FROM conceptnet WHERE name LIKE ?',
                            (name.strip(),)).fetchone()
   return np.frombuffer(embedding[0], dtype=np.float32)
 
@@ -66,7 +66,7 @@ def actionable_properties(object_type: str) -> List[str]:
     A list of strings describing the actionable properties of an object, as
     defined by AI2Thor.
   """
-  ai2thor_actions = CONN.execute('SELECT ai2thor_action_type, partial FROM ai2thor_actions WHERE object_type LIKE ?', (object_type.strip(),)).fetchall()
+  ai2thor_actions = globals.CONN.execute('SELECT ai2thor_action_type, partial FROM ai2thor_actions WHERE object_type LIKE ?', (object_type.strip(),)).fetchall()
 
   return [action + ' (Some)' * partial for action, partial in ai2thor_actions]
 
@@ -82,7 +82,7 @@ def material_properties(object_type: str) -> List[str]:
     A list of strings describing the material properties of an object, as
     defined by AI2Thor.
   """
-  materials = CONN.execute('SELECT material_property_type FROM material_properties WHERE object_type LIKE ?', (object_type.strip(),)).fetchall()
+  materials = globals.CONN.execute('SELECT material_property_type FROM material_properties WHERE object_type LIKE ?', (object_type.strip(),)).fetchall()
 
   return [m[0] for m in materials]
 
@@ -98,7 +98,7 @@ def scenes(object_type: str) -> List[str]:
     A list of strings describing all scenes where a AI2Thor pickupable object
     can be found, as defined by AI2Thor.
   """
-  _scenes = CONN.execute('SELECT scene_type FROM scenes WHERE object_type LIKE ?', (object_type.strip(),)).fetchall()
+  _scenes = globals.CONN.execute('SELECT scene_type FROM scenes WHERE object_type LIKE ?', (object_type.strip(),)).fetchall()
 
   return [s[0] for s in _scenes]
 
@@ -114,7 +114,7 @@ def receptacles(object_type: str) -> List[str]:
     A list of strings describing all default compatible receptacles where a
     AI2Thor pickupable object can be found, as defined by AI2Thor.
   """
-  _receptacles = CONN.execute('SELECT receptacle_type FROM receptacles WHERE object_type LIKE ?', (object_type.strip(),)).fetchall()
+  _receptacles = globals.CONN.execute('SELECT receptacle_type FROM receptacles WHERE object_type LIKE ?', (object_type.strip(),)).fetchall()
 
   return [s[0] for s in _receptacles]
 
@@ -130,11 +130,11 @@ def affordances(object_type: str) -> Dict[str, bool]:
     A dict of strings to bool describing the affordances of a AI2Thor pickupable
     object, as defined by RoboCSE.
   """
-  cur = CONN.execute('PRAGMA table_info(affordances)')
+  cur = globals.CONN.execute('PRAGMA table_info(affordances)')
   affordance_types = cur.fetchall()
   affordance_types = [a[1] for a in filter(lambda a: a[2] == 'bool', affordance_types)]
 
-  aff = CONN.execute(f'SELECT {", ".join(affordance_types)} FROM affordances WHERE object_type LIKE ?', (object_type.strip(),)).fetchone()
+  aff = globals.CONN.execute(f'SELECT {", ".join(affordance_types)} FROM affordances WHERE object_type LIKE ?', (object_type.strip(),)).fetchone()
   if aff is None:
     return {}
 
@@ -154,11 +154,11 @@ def robocse(object_type: str) -> Tuple[Dict[str, bool], Optional[np.ndarray]]:
     A np.ndarray of the same properties, decomposed by PCA to 20 dimensions from
     24 total properties.
   """
-  cur = CONN.execute('PRAGMA table_info(robocse)')
+  cur = globals.CONN.execute('PRAGMA table_info(robocse)')
   cse_types = cur.fetchall()
   cse_types = [a[1] for a in filter(lambda a: a[2] == 'bool', cse_types)]
 
-  cse = CONN.execute(f'SELECT {", ".join(cse_types)}, pca_embedding FROM robocse WHERE object_type LIKE ?', (object_type.strip(),)).fetchone()
+  cse = globals.CONN.execute(f'SELECT {", ".join(cse_types)}, pca_embedding FROM robocse WHERE object_type LIKE ?', (object_type.strip(),)).fetchone()
   if cse is None:
     return {}, None
 
@@ -178,14 +178,14 @@ def walmart(object_type: str) -> List[List[str]]:
     according to the Walmart website's categorization.
   """
   def _walmart(node: str, path: List[str]) -> List[str]:
-    curr = CONN.execute('SELECT parent FROM walmart WHERE node LIKE ?', (node.strip(),)).fetchone()[0]
+    curr = globals.CONN.execute('SELECT parent FROM walmart WHERE node LIKE ?', (node.strip(),)).fetchone()[0]
     if not curr:
       return path[::-1]
     path.append(curr)
 
     return _walmart(curr, path)
 
-  parents = CONN.execute('SELECT parent FROM object_parents WHERE object_type LIKE ?', (object_type.strip(),)).fetchall()
+  parents = globals.CONN.execute('SELECT parent FROM object_parents WHERE object_type LIKE ?', (object_type.strip(),)).fetchall()
 
   if not len(parents):
     return parents
@@ -224,7 +224,7 @@ def load(object_type: str) -> Dict[str, Any]:
       Wordnet Name: Corresponding wordnet name for a AI2Thor object.
       Contextual Interactions: Context as defined by AI2Thor.
   """
-  _object_type, conceptnet_name, wordnet_name, context = CONN.execute(
+  _object_type, conceptnet_name, wordnet_name, context = globals.CONN.execute(
     'SELECT name, conceptnet_name, wordnet_name, contextual_interactions FROM objects WHERE name LIKE ?', (object_type.strip(),)).fetchone()
 
   conceptnet_embedding = conceptnet(conceptnet_name)
@@ -254,4 +254,4 @@ def load(object_type: str) -> Dict[str, Any]:
 
 
 def load_all() -> Dict[str, Dict[str, Any]]:
-  return {name: load(name) for name in tqdm(get_object_names())}
+  return {name: load(name) for name in globals.tqdm(get_object_names())}
