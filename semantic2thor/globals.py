@@ -4,11 +4,7 @@ import os
 try:
   from tqdm import tqdm
 except ImportError:
-  class tqdm:
-    def __init__(*aargs, **kwargs):
-      pass
-    def update(self):
-      pass
+  tqdm = lambda x, **a: x
 
 DB_PATH = os.path.join(os.path.dirname(__file__), 'data', 'ai2thor.db')
 CONN = None
