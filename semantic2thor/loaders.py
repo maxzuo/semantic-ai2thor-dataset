@@ -172,6 +172,20 @@ def walmart(object_type: str) -> List[List[str]]:
 
   return [_walmart(parent[0], [parent[0]]) for parent in parents]
 
+def flag(object_type: str) -> int:
+  """
+  Retrieve flag attribute. Used to describe usage of an object.
+
+  Args:
+    object_type: name of a AI2Thor pickupable object
+
+  Returns:
+    An integer flag
+  """
+  flag, *_ = globals.CONN.execute(f'SELECT flag FROM objects WHERE name LIKE ?', (object_type.strip(),)).fetchone()
+
+  return flag
+
 
 def load(object_type: str) -> Dict[str, Any]:
   """
