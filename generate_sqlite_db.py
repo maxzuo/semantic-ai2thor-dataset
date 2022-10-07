@@ -18,11 +18,11 @@ with open('ai2thor_affordances.csv', 'r', newline='') as f:
   # AFFORDANCES = set()
   ROBOCSE = set()
   next(csv_reader)
-  for name, wordnet_name, affordances, ai2thor_robocse, _ in csv_reader:
+  for name, wordnet_name, flag, ai2thor_robocse, _ in csv_reader:
     # AFFORDANCES.update(literal_eval(affordances))
-    ROBOCSE.update(literal_eval(ai2thor_robocse))
-    ai2thor_data[name] = dict(wordnet=wordnet_name, affordances=literal_eval(
-      affordances), robocse=literal_eval(ai2thor_robocse))
+    if ai2thor_robocse is not None and ai2thor_robocse != 'None':
+      ROBOCSE.update(literal_eval(ai2thor_robocse))
+    ai2thor_data[name] = dict(wordnet=wordnet_name, robocse=literal_eval(ai2thor_robocse))
 
 
 # AFFORDANCES = sorted(AFFORDANCES)
@@ -70,7 +70,7 @@ def add_conceptnet(objects):
   CONN.commit()
 
 def add_objects(objects):
-  objects = [(o['Object Type'], o['Conceptnet Name'], ai2thor_data.get(o['Object Type'], {}).get('wordnet_name'),
+  objects = [(o['Object Type'], o['Conceptnet Name'], ai2thor_data.get(o['Object Type'], {}).get('wordnet'),
               o['Contextual Interactions'] if o['Contextual Interactions'] != '' else None) for o in tqdm.tqdm(objects)]
   CONN.executemany('INSERT INTO objects VALUES (?, ?, ?, ?)', objects)
   CONN.commit()
@@ -254,7 +254,7 @@ def add_affordances():
         );''')
   CONN.commit()
   print('Creating robocse')
-  object_robocse = [[name, *(a in o['robocse'] for a in ROBOCSE)] for name, o in tqdm.tqdm(ai2thor_data.items())]
+  object_robocse = [[name, *(a in (o['robocse'] if o['robocse'] is not None else set()) for a in ROBOCSE)] for name, o in tqdm.tqdm(ai2thor_data.items())]
   vector_cse = np.asarray([a for _, *a in object_robocse], dtype=np.float32)
   _pca = _PCA()
   _pca.find_components(vector_cse)

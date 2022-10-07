@@ -1,0 +1,68 @@
+name,wordnet,active_flag,ai2thor_robocse,ai2thor_actionable_properties
+AlarmClock,alarm_clock.n.01,y,"['dust', 'pickup', 'put']",['Pickupable']
+AluminumFoil,aluminum_foil.n.01,n,None,['Pickupable']
+Apple,apple.n.01,y,"['stow', 'pickup', 'put', 'bake', 'discard', 'slice', 'rinse']","['Pickupable', ' Sliceable']"
+AppleSliced*,apple.n.01,n,None,['Pickupable']
+BaseballBat,baseball_bat.n.01,y,"['pickup', 'put', 'stow']",['Pickupable']
+BasketBall,basketball.n.02,y,"['put', 'stow', 'pickup']",['Pickupable']
+Book,book.n.01,y,"['pickup', 'dust', 'close', 'put', 'open', 'stow']","['Openable', ' Pickupable']"
+Boots,boot.n.01,y,"['wash', 'put', 'stow', 'pickup']",['Pickupable']
+Bottle,bottle.n.01,y,"['pickup', 'fill', 'break', 'rinse']","['Pickupable', ' Fillable', ' Breakable']"
+Bowl,bowl.n.01,y,"['put', 'empty', 'fill', 'scrub', 'pickup', 'pour', 'pour', 'stow', 'rinse', 'wash']","['Pickupable', ' Receptacle', ' Fillable', ' Breakable (Some)', ' Dirtyable']"
+Box,box.n.01,y,"['empty', 'recycle', 'fill', 'pickup', 'stow', 'close', 'dust', 'put', 'open']","['Openable', ' Pickupable', ' Receptacle']"
+Bread,bread.n.01,y,"['put', 'slice', 'toast', 'bake', 'pickup', 'stow', 'discard']","['Pickupable', ' Sliceable']"
+BreadSliced*,bread.n.01,n,None,"['Pickupable', 'Cookable']"
+ButterKnife,butter_knife.n.01,y,"['rinse', 'wash', 'stow', 'put', 'scrub', 'pickup', 'slice']",['Pickupable']
+Candle,candle.n.01,y,"['discard', 'switchon', 'switchoff', 'put', 'stow', 'pickup']","['Pickupable', ' Toggleable']"
+CD,compact_disk.n.01,y,"['wipe', 'stow', 'put', 'pickup']",['Pickupable']
+CellPhone,cellular_telephone.n.01,y,"['switchoff', 'switchon', 'wipe', 'break', 'pickup', 'put', 'stow']","['Pickupable', ' Toggleable', ' Breakable']"
+Cloth,fabric.n.01,y,"['put', 'wipe', 'pickup', 'scrub', 'wash', 'stow']","['Pickupable', ' Dirtyable']"
+CreditCard,credit_card.n.01,y,"['pickup', 'put', 'stow']",['Pickupable']
+Cup,cup.n.01,y,"['wash', 'empty', 'fill', 'pour', 'put', 'pickup', 'stow', 'pour', 'rinse', 'recycle', 'scrub']","['Pickupable', ' Receptacle', ' Fillable', ' Breakable (Some)', ' Dirtyable']"
+DishSponge,sponge.n.01,y,"['discard', 'scrub', 'stow', 'pickup', 'put', 'rinse']",['Pickupable']
+Dumbbell,dumbbell.n.01,n,None,['Pickupable']
+Egg,egg.n.02,y,"['boil', 'break', 'microwave', 'fry', 'stow', 'slice', 'discard', 'put', 'pickup']","['Pickupable', ' Sliceable', ' Breakable']"
+EggCracked*,egg.n.02,n,None,"['Pickupable', 'Cookable']"
+Fork,fork.n.01,y,"['pickup', 'wash', 'scrub', 'recycle', 'put', 'rinse', 'stow']",['Pickupable']
+HandTowel,hand_towel.n.01,y,"['scrub', 'pickup', 'wipe', 'put', 'stow', 'dust', 'wash']",['Pickupable']
+Kettle,kettle.n.01,y,"['fill', 'pickup', 'wash', 'close', 'scrub', 'pour', 'rinse', 'open', 'put', 'stow']","['Openable', ' Pickupable', ' Fillable']"
+KeyChain,key_ring.n.01,y,"['pickup', 'stow', 'put']",['Pickupable']
+Knife,knife.n.01,y,"['wash', 'put', 'pickup', 'slice', 'stow', 'recycle', 'scrub', 'rinse']",['Pickupable']
+Ladle,ladle.n.01,y,"['scrub', 'wash', 'rinse', 'put', 'pickup', 'stow', 'pour']",['Pickupable']
+Laptop,laptop.n.01,y,"['pickup', 'break', 'switchon', 'switchoff', 'dust', 'put', 'close', 'stow', 'wipe', 'open']","['Openable', ' Pickupable', ' Toggleable', ' Breakable']"
+Lettuce,lettuce.n.02,y,"['slice', 'put', 'discard', 'stow', 'rinse', 'pickup']","['Pickupable', ' Sliceable']"
+LettuceSliced*,lettuce.n.02,n,None,['Pickupable']
+Mug,mug.n.04,y,"['wash', 'break', 'fill', 'stow', 'empty', 'put', 'pickup', 'rinse', 'scrub', 'pour', 'pour']","['Pickupable', ' Receptacle', ' Fillable', ' Breakable', ' Dirtyable']"
+Newspaper,newspaper.n.01,y,"['put', 'stow', 'pickup', 'recycle']",['Pickupable']
+Pan,pan.n.01,y,"['pickup', 'rinse', 'empty', 'put', 'fill', 'scrub', 'stow', 'wash']","['Pickupable', ' Receptacle', ' Dirtyable']"
+PaperTowelRoll,paper_towel.n.01,y,"['put', 'stow', 'pickup', 'recycle']","['Pickupable', ' UsedUp']"
+Pen,pen.n.01,y,"['stow', 'discard', 'put', 'pickup']",['Pickupable']
+Pencil,pencil.n.01,y,"['stow', 'pickup', 'put', 'discard']",['Pickupable']
+PepperShaker,pepper_shaker.n.01,y,"['stow', 'pickup', 'put']",['Pickupable']
+Pillow,pillow.n.01,y,"['pickup', 'wash', 'put', 'stow']",['Pickupable']
+Plate,plate.n.04,y,"['empty', 'recycle', 'put', 'scrub', 'pickup', 'stow', 'fill', 'wash', 'rinse']","['Pickupable', ' Receptacle', ' Breakable (Some)', ' Dirtyable']"
+Plunger,plunger.n.03,y,"['stow', 'pickup', 'put']",['Pickupable']
+Pot,pot.n.01,y,"['put', 'pickup', 'scrub', 'rinse', 'empty', 'pour', 'wash', 'fill', 'stow']","['Pickupable', ' Receptacle', ' Fillable', ' Dirtyable']"
+Potato,potato.n.01,y,"['discard', 'slice', 'pickup', 'fry', 'rinse', 'bake', 'microwave', 'stow', 'put', 'boil']","['Pickupable', ' Sliceable', ' Cookable']"
+PotatoSliced*,potato.n.01,n,None,"['Pickupable', 'Cookable']"
+RemoteControl,remote_control.n.01,y,"['stow', 'pickup', 'put']",['Pickupable']
+SaltShaker,saltshaker.n.01,y,"['put', 'stow', 'pickup']",['Pickupable']
+ScrubBrush,scrub_brush.n.01,y,"['rinse', 'stow', 'put', 'pickup', 'scrub']",['Pickupable']
+SoapBar,bar_soap.n.01,y,"['discard', 'put', 'pickup', 'stow']",['Pickupable']
+SoapBottle,soap_dispenser.n.01,y,"['stow', 'discard', 'put', 'pickup']","['Pickupable', ' UsedUp (Some)']"
+Spatula,spatula.n.01,y,"['wash', 'rinse', 'put', 'stow', 'scrub', 'pickup']",['Pickupable']
+Spoon,spoon.n.01,y,"['discard', 'pickup', 'put', 'rinse', 'wash', 'scrub', 'stow', 'recycle']",['Pickupable']
+SprayBottle,atomizer.n.01,y,"['pickup', 'discard', 'stow', 'put']",['Pickupable']
+Statue,statue.n.01,y,"['wipe', 'break', 'pickup', 'put', 'dust']","['Pickupable', ' Breakable']"
+TableTopDecor,interior_decoration.n.01,n,None,['Pickupable']
+TeddyBear,teddy.n.01,y,"['put', 'pickup', 'wash', 'stow']",['Pickupable']
+TennisRacket,tennis_racket.n.01,y,"['stow', 'pickup', 'put']",['Pickupable']
+TissueBox,tissue.n.02,y,"['put', 'pickup', 'discard']","['Pickupable', ' UsedUp (Some)']"
+ToiletPaper,toilet_tissue.n.01,y,"['stow', 'put', 'discard', 'pickup']","['Pickupable', ' UsedUp']"
+Tomato,tomato.n.01,y,"['stow', 'slice', 'discard', 'put', 'fry', 'pickup', 'rinse']","['Pickupable', ' Sliceable']"
+TomatoSliced*,tomato.n.01,n,None,['Pickupable']
+Towel,towel.n.01,y,"['scrub', 'wipe', 'pickup', 'stow', 'dust', 'wash', 'put']",['Pickupable']
+Vase,vase.n.01,y,"['pickup', 'put', 'wipe', 'dust', 'break', 'stow', 'pour']","['Pickupable', ' Breakable']"
+Watch,watch.n.01,y,"['put', 'stow', 'pickup']",['Pickupable']
+WateringCan,watering_can.n.01,y,"['put', 'stow', 'pour', 'fill', 'pour', 'pickup']","['Pickupable', ' Fillable']"
+WineBottle,wine_bottle.n.01,y,"['put', 'pour', 'stow', 'recycle', 'pour', 'fill', 'break', 'pickup']","['Pickupable', ' Fillable', ' Breakable']"
