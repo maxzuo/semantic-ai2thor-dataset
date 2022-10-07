@@ -1,0 +1,2575 @@
+[
+  {
+    "Object Type": "AlarmClock",
+    "Scenes": [
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Home",
+        "Decor",
+        "Clocks",
+        "Alarm Clocks"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Box",
+      "Dresser",
+      "Desk",
+      "SideTable",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "CounterTop",
+      "Shelf"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "alarm_clock"
+  },
+  {
+    "Object Type": "AluminumFoil",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Household Essentials",
+        "Paper & Plastic",
+        "Aluminum Foil"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "aluminum_foil"
+  },
+  {
+    "Object Type": "Apple",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Fresh Produce",
+        "Fresh Fruits",
+        "Apples & Pears"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Sliceable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Microwave",
+      "Fridge",
+      "Plate",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "Desk",
+      "CounterTop",
+      "GarbageCan",
+      "Dresser"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "apple"
+  },
+  {
+    "Object Type": "AppleSliced*",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Fresh Produce",
+        "Cut Fruits & Vegetables",
+        "Fresh Pre-Cut Fruits"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials",
+      "Inherited: Slice (Apple)"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Microwave",
+      "Fridge",
+      "Plate",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "Desk",
+      "CounterTop",
+      "GarbageCan",
+      "Dresser"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "apple"
+  },
+  {
+    "Object Type": "BaseballBat",
+    "Scenes": [
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Sports & Outdoors",
+        "Sports",
+        "Baseball Gear & Equipment",
+        "Baseball Bats"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature"
+    ],
+    "Default Compatible Receptacles": [
+      "Bed",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "Desk",
+      "CounterTop"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "baseball_bat"
+  },
+  {
+    "Object Type": "BasketBall",
+    "Scenes": [
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Sports & Outdoors",
+        "Sports",
+        "Basketball",
+        "Basketballs"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature"
+    ],
+    "Default Compatible Receptacles": [
+      "Sofa",
+      "ArmChair",
+      "Dresser",
+      "Desk",
+      "Bed",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "basketball"
+  },
+  {
+    "Object Type": "Book",
+    "Scenes": [
+      "Kitchens",
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Books"
+      ]
+    ],
+    "Actionable Properties": [
+      "Openable",
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Sofa",
+      "ArmChair",
+      "Box",
+      "Ottoman",
+      "Dresser",
+      "Desk",
+      "Bed",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "book"
+  },
+  {
+    "Object Type": "Boots",
+    "Scenes": [
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Clothing",
+        "Shoes",
+        "Womens Shoes",
+        "Womens Boots"
+      ],
+      [
+        "Clothing",
+        "Shoes",
+        "Mens Shoes",
+        "Mens Boots"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "boots"
+  },
+  {
+    "Object Type": "Bottle",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Travel Drinkware",
+        "Water Bottles"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Fillable",
+      "Breakable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Fridge",
+      "Box",
+      "Dresser",
+      "Desk",
+      "Sink",
+      "SinkBasin",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "Will break if subjected to enough force. Will fill up with water if moved underneath a running water source.",
+    "Conceptnet Name": "bottle"
+  },
+  {
+    "Object Type": "Bowl",
+    "Scenes": [
+      "Kitchens",
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Bowls"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Receptacle",
+      "Fillable",
+      "Breakable (Some)",
+      "Dirtyable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Microwave",
+      "Fridge",
+      "Dresser",
+      "Desk",
+      "Sink",
+      "SinkBasin",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf"
+    ],
+    "Contextual Interactions": "Will automatically break if subjected to enough force. Not all bowls are breakable (Plastic-Unbreakable vs Glass-Breakable vs Ceramic-Breakable). If empty, will fill up with water if moved underneath a running water source. If in the Dirty state, will automatically become Clean if moved under running water.",
+    "Conceptnet Name": "bowl"
+  },
+  {
+    "Object Type": "Box",
+    "Scenes": [
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Office Supplies",
+        "Shipping & Moving",
+        "Moving Boxes & Kits"
+      ],
+      [
+        "Home",
+        "Storage & Organization",
+        "Storage Containers",
+        "Plastic Storage Bins & Boxes",
+        "Plastic Storage Boxes"
+      ]
+    ],
+    "Actionable Properties": [
+      "Openable",
+      "Pickupable",
+      "Receptacle"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Sofa",
+      "ArmChair",
+      "Dresser",
+      "Desk",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Ottoman"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "box"
+  },
+  {
+    "Object Type": "Bread",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Bakery & Bread"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Sliceable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Microwave",
+      "Fridge",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "Desk",
+      "CounterTop",
+      "GarbageCan",
+      "Plate"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "bread"
+  },
+  {
+    "Object Type": "BreadSliced*",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Bakery & Bread"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Cookable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials",
+      "Inherited: Slice (Bread)"
+    ],
+    "Default Compatible Receptacles": [
+      "Microwave",
+      "Fridge",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "Desk",
+      "CounterTop",
+      "GarbageCan",
+      "Toaster",
+      "Plate"
+    ],
+    "Contextual Interactions": "Use PutObject action to place BreadSliced into Toaster objects. If the Toaster is on, the BreadSliced will automatically cook. BreadSliced will also automatically cook if moved over an active StoveBurner object.",
+    "Conceptnet Name": "sliced_bread"
+  },
+  {
+    "Object Type": "ButterKnife",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Flatware",
+        "Knives"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Mug",
+      "Plate",
+      "Cup",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "Desk",
+      "CounterTop",
+      "Drawer"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "butter_knife"
+  },
+  {
+    "Object Type": "Candle",
+    "Scenes": [
+      "Living Rooms",
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Home",
+        "Decor",
+        "Candles & Home Fragrance",
+        "Candles"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Toggleable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Box",
+      "Dresser",
+      "Desk",
+      "Toilet",
+      "Cart",
+      "Bathtub",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer"
+    ],
+    "Contextual Interactions": "Can be lit using the ToggleObjectOn action. If another source of flame (another Candle or a Stove Burner) touches the wick, the Candle will automatically be lit and turn on. If the wick of the Candle touches a source of water, then the Candle will automatically be put out and turned off.",
+    "Conceptnet Name": "candle"
+  },
+  {
+    "Object Type": "CD",
+    "Scenes": [
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Music"
+      ],
+      [
+        "Electronics",
+        "Computers",
+        "Computer Accessories",
+        "Blank Media"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Box",
+      "Ottoman",
+      "Dresser",
+      "Desk",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "GarbageCan",
+      "Safe",
+      "Sofa",
+      "ArmChair"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "d_c"
+  },
+  {
+    "Object Type": "CellPhone",
+    "Scenes": [
+      "Kitchens",
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Cell Phones"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Toggleable",
+      "Breakable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Sofa",
+      "ArmChair",
+      "Box",
+      "Ottoman",
+      "Dresser",
+      "Desk",
+      "Bed",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "Safe"
+    ],
+    "Contextual Interactions": "Will automatically break if subjected to enough force. When broken, the CellPhone's screen will appear cracked and the On/Off state will be switched to Off. Broken CellPhones will no longer be able to turn on with ToggleObjectOn.",
+    "Conceptnet Name": "cell_phone"
+  },
+  {
+    "Object Type": "Cloth",
+    "Scenes": [
+      "Bedrooms",
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Household Essentials",
+        "Cleaning Supplies",
+        "Surface Care & Protection"
+      ],
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Kitchen & Table Linens",
+        "Kitchen Linens",
+        "Dish Cloths"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Dirtyable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Sofa",
+      "ArmChair",
+      "Box",
+      "Ottoman",
+      "Dresser",
+      "LaundryHamper",
+      "Desk",
+      "Toilet",
+      "Cart",
+      "BathtubBasin",
+      "Bathtub",
+      "Sink",
+      "SinkBasin",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "If in the Dirty state, will automatically become Clean if moved under running water.",
+    "Conceptnet Name": "cloth"
+  },
+  {
+    "Object Type": "CreditCard",
+    "Scenes": [
+      "Kitchens",
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Credit Card"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Sofa",
+      "ArmChair",
+      "Box",
+      "Ottoman",
+      "Dresser",
+      "Desk",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "credit_card"
+  },
+  {
+    "Object Type": "Cup",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Household Essentials",
+        "Paper & Plastic",
+        "Disposable Tableware",
+        "Disposable Cups"
+      ],
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Drinkware",
+        "Drinking Glasses"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Receptacle",
+      "Fillable",
+      "Breakable (Some)",
+      "Dirtyable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Microwave",
+      "Fridge",
+      "Dresser",
+      "Desk",
+      "Sink",
+      "SinkBasin",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf"
+    ],
+    "Contextual Interactions": "Will automatically break if subjected to enough force. Not all Cups are breakable (Plastic-Unbreakable vs Glass-Breakable vs Ceramic-Breakable). If empty, will fill up with water if moved underneath a running water source. If in the Dirty state, will automatically become Clean if moved under running water.",
+    "Conceptnet Name": "cup"
+  },
+  {
+    "Object Type": "DishSponge",
+    "Scenes": [
+      "Kitchens",
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Household Essentials",
+        "Cleaning Supplies",
+        "Cleaning Tools",
+        "Sponges and Scrubbers"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Plate",
+      "Box",
+      "Toilet",
+      "Cart",
+      "BathtubBasin",
+      "Bathtub",
+      "Sink",
+      "SinkBasin",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "sponge"
+  },
+  {
+    "Object Type": "Dumbbell",
+    "Scenes": [
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Sports & Outdoors",
+        "Exercise & Fitness",
+        "Strength Training",
+        "Weights",
+        "Dumbbells"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "dumbbell"
+  },
+  {
+    "Object Type": "Egg",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Dairy & Eggs",
+        "Eggs"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Sliceable",
+      "Breakable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Microwave",
+      "Fridge",
+      "Plate",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "Using the Slice action or the Break action will change the Egg to an EggCracked object. Dropping or Throwing the Egg with enough force will also automatically Break the egg into an EggCracked.",
+    "Conceptnet Name": "egg"
+  },
+  {
+    "Object Type": "EggCracked*",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Dairy & Eggs",
+        "Eggs"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Cookable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials",
+      "Inherited: Slice (Egg)",
+      "Inherited: Break (Egg)"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Microwave",
+      "Fridge",
+      "Plate",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "Placing an EggCracked object onto an active StoveBurner will automatically cook it. Placing an EggCracked object into a Microwave, and then turning on the Microwave will automatically cook it.",
+    "Conceptnet Name": "egg"
+  },
+  {
+    "Object Type": "Fork",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Flatware",
+        "Forks"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Mug",
+      "Plate",
+      "Cup",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Drawer"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "fork"
+  },
+  {
+    "Object Type": "HandTowel",
+    "Scenes": [
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Home",
+        "Bath",
+        "Bath Towels"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "HandTowelHolder"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "hand_towel"
+  },
+  {
+    "Object Type": "Kettle",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Tools & Gadgets",
+        "Tea Kettles"
+      ]
+    ],
+    "Actionable Properties": [
+      "Openable",
+      "Pickupable",
+      "Fillable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Sink",
+      "SinkBasin",
+      "Cabinet",
+      "StoveBurner",
+      "Shelf"
+    ],
+    "Contextual Interactions": "Will fill up with water if moved underneath a running water source.",
+    "Conceptnet Name": "kettle"
+  },
+  {
+    "Object Type": "KeyChain",
+    "Scenes": [
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Clothing",
+        "Bags & Accessories",
+        "Women's Bags & Accessories",
+        "Women's Accessories",
+        "Womens Keyrings & Keychains"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Sofa",
+      "ArmChair",
+      "Box",
+      "Ottoman",
+      "Dresser",
+      "Desk",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "Safe"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "key_chain"
+  },
+  {
+    "Object Type": "Knife",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Cutlery"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Mug",
+      "Plate",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Drawer"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "knife"
+  },
+  {
+    "Object Type": "Ladle",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Tools & Gadgets",
+        "Kitchen Tools & Gadgets",
+        "Kitchen Ladles"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Plate",
+      "Sink",
+      "SinkBasin",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Drawer"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "ladle"
+  },
+  {
+    "Object Type": "Laptop",
+    "Scenes": [
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Electronics",
+        "Computers",
+        "Laptops"
+      ]
+    ],
+    "Actionable Properties": [
+      "Openable",
+      "Pickupable",
+      "Toggleable",
+      "Breakable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Sofa",
+      "ArmChair",
+      "Ottoman",
+      "Dresser",
+      "Desk",
+      "Bed",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop"
+    ],
+    "Contextual Interactions": "Will automatically break if subjected to enough force. When broken, the Laptop's screen will appear cracked and the On/Off state will be switched to Off. Broken Laptops will no longer be able to turn on with ToggleObjectOn, but they can still be opened or closed with OpenObject or CloseObject.",
+    "Conceptnet Name": "laptop"
+  },
+  {
+    "Object Type": "Lettuce",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Fresh Produce",
+        "Fresh Vegetables",
+        "Lettuce & Whole Greens"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Sliceable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Fridge",
+      "Plate",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "lettuce"
+  },
+  {
+    "Object Type": "LettuceSliced*",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Fresh Produce",
+        "Fresh Vegetables",
+        "Lettuce & Whole Greens"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials",
+      "Inherited: Slice (Lettuce)"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Fridge",
+      "Plate",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "lettuce"
+  },
+  {
+    "Object Type": "Mug",
+    "Scenes": [
+      "Kitchens",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Drinkware",
+        "Coffee Mugs"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Receptacle",
+      "Fillable",
+      "Breakable",
+      "Dirtyable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "SinkBasin",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf"
+    ],
+    "Contextual Interactions": "Will automatically break if subjected to enough force. Not all Mugs are breakable (Plastic-Unbreakable vs Glass-Breakable vs Ceramic-Breakable). If empty, will fill up with water if moved underneath a running water source. If in the Dirty state, will automatically become Clean if moved under running water. If empty and placed in a CoffeeMachine that is on, will automatically fill with Coffee and have temperature changed to Hot",
+    "Conceptnet Name": "mug"
+  },
+  {
+    "Object Type": "Newspaper",
+    "Scenes": [
+      "Living Rooms"
+    ],
+    "path": [
+      [
+        "Books"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Sofa",
+      "ArmChair",
+      "Ottoman",
+      "Dresser",
+      "Desk",
+      "Bed",
+      "Toilet",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "newspaper"
+  },
+  {
+    "Object Type": "Pan",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Pots & Pans",
+        "Skillets & Frying Pans"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Receptacle",
+      "Dirtyable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "DiningTable",
+      "CounterTop",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "Sink",
+      "SinkBasin",
+      "Cabinet",
+      "StoveBurner",
+      "Fridge"
+    ],
+    "Contextual Interactions": "If in the Dirty state, will automatically become Clean if moved under running water.",
+    "Conceptnet Name": "pan"
+  },
+  {
+    "Object Type": "PaperTowelRoll",
+    "Scenes": [
+      "Kitchens",
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Household Essentials",
+        "Paper & Plastic",
+        "Paper Towels"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "UsedUp"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "paper_towel"
+  },
+  {
+    "Object Type": "Pen",
+    "Scenes": [
+      "Kitchens",
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Office Supplies",
+        "Pens"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Mug",
+      "Box",
+      "Dresser",
+      "Desk",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "pen"
+  },
+  {
+    "Object Type": "Pencil",
+    "Scenes": [
+      "Kitchens",
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Office Supplies",
+        "Pencils & Pencil Sharpeners",
+        "Wooden and #2 Pencils"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Mug",
+      "Box",
+      "Dresser",
+      "Desk",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "pencil"
+  },
+  {
+    "Object Type": "PepperShaker",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Serveware",
+        "Salt & Pepper Shakers"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Drawer",
+      "Cabinet",
+      "Shelf"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "pepper_shaker"
+  },
+  {
+    "Object Type": "Pillow",
+    "Scenes": [
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Home",
+        "Bedding",
+        "Basic Bedding",
+        "Basic Bed Pillows"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Sofa",
+      "ArmChair",
+      "Ottoman",
+      "Bed"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "pillow"
+  },
+  {
+    "Object Type": "Plate",
+    "Scenes": [
+      "Kitchens",
+      "Living Rooms"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Plates"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Receptacle",
+      "Breakable (Some)",
+      "Dirtyable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Microwave",
+      "Fridge",
+      "Dresser",
+      "Desk",
+      "Sink",
+      "SinkBasin",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf"
+    ],
+    "Contextual Interactions": "Will automatically break if subjected to enough force. Not all Plates are breakable (Plastic-Unbreakable vs Glass-Breakable vs Ceramic-Breakable). If in the Dirty state, will automatically become Clean if moved under running water.",
+    "Conceptnet Name": "plate"
+  },
+  {
+    "Object Type": "Plunger",
+    "Scenes": [
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Household Essentials",
+        "Bathroom Cleaning Supplies",
+        "Bathroom Cleaners"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Cart",
+      "Cabinet"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "plunger"
+  },
+  {
+    "Object Type": "Pot",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Pots & Pans"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Receptacle",
+      "Fillable",
+      "Dirtyable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "StoveBurner",
+      "Fridge",
+      "Sink",
+      "SinkBasin",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf"
+    ],
+    "Contextual Interactions": "If empty, will fill up with water if moved underneath a running water source. If in the Dirty state, will automatically become Clean if moved under running water.",
+    "Conceptnet Name": "pot"
+  },
+  {
+    "Object Type": "Potato",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Fresh Produce",
+        "Fresh Vegetables",
+        "Potatoes"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Sliceable",
+      "Cookable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Microwave",
+      "Fridge",
+      "Plate",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "Will automatically be Cooked if placed over an active Stove Burner or in a turned on Microwave. When Sliced, will create multiple PotatoSliced objects. Cooking the Potato first and then Slicing it will result in Cooked PotatoSliced objects.",
+    "Conceptnet Name": "potato"
+  },
+  {
+    "Object Type": "PotatoSliced*",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Pantry",
+        "Canned Goods",
+        "Canned Vegetables",
+        "All Canned Vegetables"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Cookable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials",
+      "Inherited: Slice (Potato)"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Microwave",
+      "Fridge",
+      "Plate",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "Will automatically be Cooked if placed over an active Stove Burner or in a turned on Microwave.",
+    "Conceptnet Name": "potato"
+  },
+  {
+    "Object Type": "RemoteControl",
+    "Scenes": [
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Electronics",
+        "Electronics Accessories",
+        "General Electronic Accessories",
+        "All Remote Controls"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Sofa",
+      "ArmChair",
+      "Box",
+      "Ottoman",
+      "Dresser",
+      "Desk",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "remote_control"
+  },
+  {
+    "Object Type": "SaltShaker",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Serveware",
+        "Salt & Pepper Shakers"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Drawer",
+      "Cabinet",
+      "Shelf"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "salt_shaker"
+  },
+  {
+    "Object Type": "ScrubBrush",
+    "Scenes": [
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Household Essentials",
+        "Cleaning Supplies",
+        "Cleaning Tools",
+        "Cleaning Brushes"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "scrub_brush"
+  },
+  {
+    "Object Type": "SoapBar",
+    "Scenes": [
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Personal Care",
+        "Bath & Body",
+        "Bath & Shower",
+        "Bar Soap"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Toilet",
+      "Cart",
+      "Bathtub",
+      "BathtubBasin",
+      "Sink",
+      "SinkBasin",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "bar_soap"
+  },
+  {
+    "Object Type": "SoapBottle",
+    "Scenes": [
+      "Kitchens",
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Household Essentials",
+        "Cleaning Supplies",
+        "Dishwashing",
+        "Dish Soap"
+      ],
+      [
+        "Personal Care",
+        "Bath & Body",
+        "Hand Soaps"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "UsedUp (Some)"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Dresser",
+      "Desk",
+      "Toilet",
+      "Cart",
+      "Bathtub",
+      "Sink",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "soap_dispenser"
+  },
+  {
+    "Object Type": "Spatula",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Tools & Gadgets",
+        "Kitchen Tools & Gadgets",
+        "Cooking Utensils"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Plate",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Drawer"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "spatula"
+  },
+  {
+    "Object Type": "Spoon",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Flatware",
+        "Spoons"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Pot",
+      "Pan",
+      "Bowl",
+      "Mug",
+      "Plate",
+      "Cup",
+      "Sink",
+      "SinkBasin",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Drawer"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "spoon"
+  },
+  {
+    "Object Type": "SprayBottle",
+    "Scenes": [
+      "Kitchens",
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Household Essentials",
+        "Cleaning Supplies",
+        "Cleaning Tools",
+        "Spray Bottles"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Dresser",
+      "Desk",
+      "Toilet",
+      "Cart",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "spray_bottle"
+  },
+  {
+    "Object Type": "Statue",
+    "Scenes": [
+      "Kitchens",
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Patio & Garden",
+        "Patio & Outdoor Decor",
+        "Garden Statues"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Breakable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Box",
+      "Dresser",
+      "Desk",
+      "Cart",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Safe"
+    ],
+    "Contextual Interactions": "Will automatically break if subjected to enough force, for example if dropped from a high enough distance",
+    "Conceptnet Name": "statue"
+  },
+  {
+    "Object Type": "TableTopDecor",
+    "Scenes": [
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Home",
+        "Decor",
+        "Decorative Accents",
+        "Sculptures"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "table_decoration"
+  },
+  {
+    "Object Type": "TeddyBear",
+    "Scenes": [
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Toys",
+        "Stuffed Animals & Plush Toys",
+        "Teddy Bears"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Bed",
+      "Sofa",
+      "ArmChair",
+      "Ottoman",
+      "Dresser",
+      "Desk",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Safe"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "teddy_bear"
+  },
+  {
+    "Object Type": "TennisRacket",
+    "Scenes": [
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Sports & Outdoors",
+        "Sports",
+        "Tennis & Racquets",
+        "Tennis Racquets"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Dresser",
+      "Desk",
+      "Bed",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "tennis_racket"
+  },
+  {
+    "Object Type": "TissueBox",
+    "Scenes": [
+      "Living Rooms",
+      "Bedrooms",
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Household Essentials",
+        "Paper & Plastic",
+        "Facial Tissue"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "UsedUp (Some)"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Box",
+      "Dresser",
+      "Desk",
+      "Toilet",
+      "Cart",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "facial_tissue"
+  },
+  {
+    "Object Type": "ToiletPaper",
+    "Scenes": [
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Household Essentials",
+        "Paper & Plastic",
+        "Toilet Paper"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "UsedUp"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Dresser",
+      "Desk",
+      "Toilet",
+      "ToiletPaperHanger",
+      "Cart",
+      "Bathtub",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "toilet_paper"
+  },
+  {
+    "Object Type": "Tomato",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Fresh Produce",
+        "Fresh Vegetables",
+        "Tomatoes"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Sliceable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Sink",
+      "SinkBasin",
+      "Pot",
+      "Bowl",
+      "Fridge",
+      "GarbageCan",
+      "Plate"
+    ],
+    "Contextual Interactions": "When Sliced, will create multiple TomatoSliced objects.",
+    "Conceptnet Name": "tomato"
+  },
+  {
+    "Object Type": "TomatoSliced*",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Fresh Produce",
+        "Fresh Vegetables",
+        "Tomatoes"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials",
+      "Inherited: Slice (Tomato)"
+    ],
+    "Default Compatible Receptacles": [
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Sink",
+      "SinkBasin",
+      "Pot",
+      "Bowl",
+      "Fridge",
+      "GarbageCan",
+      "Plate"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "tomato"
+  },
+  {
+    "Object Type": "Towel",
+    "Scenes": [
+      "Bathrooms"
+    ],
+    "path": [
+      [
+        "Home",
+        "Bath",
+        "Bath Towels"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "TowelHolder"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "towel"
+  },
+  {
+    "Object Type": "Vase",
+    "Scenes": [
+      "Kitchens",
+      "Living Rooms",
+      "Bedrooms"
+    ],
+    "path": [
+      [
+        "Home",
+        "Decor",
+        "Decorative Accents",
+        "Vases"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Breakable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Box",
+      "Dresser",
+      "Desk",
+      "Cart",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Safe"
+    ],
+    "Contextual Interactions": "Will automaticaly break if subjected to enough force.",
+    "Conceptnet Name": "vase"
+  },
+  {
+    "Object Type": "Watch",
+    "Scenes": [
+      "Living Rooms"
+    ],
+    "path": [
+      [
+        "Jewelry",
+        "Watches"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Box",
+      "Dresser",
+      "Desk",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer",
+      "Safe"
+    ],
+    "Contextual Interactions": "",
+    "Conceptnet Name": "watch"
+  },
+  {
+    "Object Type": "WateringCan",
+    "Scenes": [
+      "Living Rooms"
+    ],
+    "path": [
+      [
+        "Patio & Garden",
+        "Garden Center",
+        "Watering & Irrigation",
+        "Watering Cans"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Fillable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Dresser",
+      "Desk",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "Drawer"
+    ],
+    "Contextual Interactions": "If empty, will automatically fill with water if placed under a running water source.",
+    "Conceptnet Name": "watering_can"
+  },
+  {
+    "Object Type": "WineBottle",
+    "Scenes": [
+      "Kitchens"
+    ],
+    "path": [
+      [
+        "Food",
+        "Alcohol",
+        "Wine"
+      ],
+      [
+        "Home",
+        "Kitchen & Dining",
+        "Dining & Entertaining",
+        "Bar & Wine Accessories"
+      ]
+    ],
+    "Actionable Properties": [
+      "Pickupable",
+      "Fillable",
+      "Breakable"
+    ],
+    "Material Properties": [
+      "Temperature",
+      "Mass",
+      "SalientMaterials"
+    ],
+    "Default Compatible Receptacles": [
+      "Fridge",
+      "Dresser",
+      "Desk",
+      "Cabinet",
+      "DiningTable",
+      "TVStand",
+      "CoffeeTable",
+      "SideTable",
+      "CounterTop",
+      "Shelf",
+      "GarbageCan"
+    ],
+    "Contextual Interactions": "Will automatically break if subjected to enough force. If empty, will automatically fill with water if placed under a running water source.",
+    "Conceptnet Name": "wine_bottle"
+  }
+]
