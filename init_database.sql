@@ -104,6 +104,7 @@ CREATE TABLE objects (
   conceptnet_name text NOT NULL,
   wordnet_name text,
   contextual_interactions text,
+  flag int NOT NULL,
   PRIMARY KEY (name),
   FOREIGN KEY (conceptnet_name) REFERENCES conceptnet(name)
 );
