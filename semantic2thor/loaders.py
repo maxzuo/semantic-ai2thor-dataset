@@ -1,4 +1,4 @@
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
 
 from . import globals
 from .metadata import get_object_names
@@ -77,6 +77,8 @@ def material_properties(object_type: str) -> List[str]:
 
   Args:
     object_type: name of a AI2Thor pickupable object.
+    flags: an int or list of ints reflecting the flag of the objects to filter
+      the query by. Default is all flags. Range is [0, 1].
 
   Returns:
     A list of strings describing the material properties of an object, as
@@ -202,8 +204,8 @@ def load(object_type: str) -> Dict[str, Any]:
       Wordnet Name: Corresponding wordnet name for a AI2Thor object.
       Contextual Interactions: Context as defined by AI2Thor.
   """
-  _object_type, conceptnet_name, wordnet_name, context = globals.CONN.execute(
-    'SELECT name, conceptnet_name, wordnet_name, contextual_interactions FROM objects WHERE name LIKE ?', (object_type.strip(),)).fetchone()
+  _object_type, conceptnet_name, wordnet_name, context, flag = globals.CONN.execute(
+    f'SELECT name, conceptnet_name, wordnet_name, contextual_interactions, flag FROM objects WHERE name LIKE ?', (object_type.strip(),)).fetchone()
 
   conceptnet_embedding = conceptnet(conceptnet_name)
   ai2thor_actions = actionable_properties(object_type)
@@ -225,9 +227,44 @@ def load(object_type: str) -> Dict[str, Any]:
             'Conceptnet Name': conceptnet_name,
             'Conceptnet Embedding': conceptnet_embedding,
             'Wordnet Name': wordnet_name,
-            'Contextual Interactions': context
+            'Contextual Interactions': context,
+            'flag': flag
           }
 
 
-def load_all() -> Dict[str, Dict[str, Any]]:
-  return {name: load(name) for name in globals.tqdm(get_object_names())}
+def load_all(flags : Union[int, Iterable[int]] = [0, 1]) -> Dict[str, Dict[str, Any]]:
+  if type(flags) == int:
+    flags = tuple(flags)
+  flags = list(set(flags))
+
+  flag_filter = ' OR '.join(['flag = ?'] * len(flags))
+  cur = globals.CONN.execute(
+    f'SELECT name, conceptnet_name, wordnet_name, contextual_interactions, flag FROM objects {"WHERE" if len(flag_filter) else ""} {flag_filter}', flags)
+
+  res = {}
+  for _object_type, conceptnet_name, wordnet_name, context, flag in cur:
+    conceptnet_embedding = conceptnet(conceptnet_name)
+    ai2thor_actions = actionable_properties(_object_type)
+    materials = material_properties(_object_type)
+    _scenes = scenes(_object_type)
+    _receptacles = receptacles(_object_type)
+    _robocse, robocse_embedding = affordances(_object_type)
+    paths = walmart(_object_type)
+
+    res[_object_type] = {
+      'Object Type': _object_type,
+      'Scenes': _scenes,
+      'Actionable Properties': ai2thor_actions,
+      'Material Properties': materials,
+      'Default Compatible Receptacles': _receptacles,
+      'paths': paths,
+      'Affordances': _robocse,
+      'RoboCSE Embedding': robocse_embedding,
+      'Conceptnet Name': conceptnet_name,
+      'Conceptnet Embedding': conceptnet_embedding,
+      'Wordnet Name': wordnet_name,
+      'Contextual Interactions': context,
+      'flag': flag
+    }
+
+  return res
