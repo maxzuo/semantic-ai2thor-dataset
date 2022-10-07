@@ -118,29 +118,7 @@ def receptacles(object_type: str) -> List[str]:
 
   return [s[0] for s in _receptacles]
 
-
-def affordances(object_type: str) -> Dict[str, bool]:
-  """
-  Retrieve a dictionary of affordances of a AI2Thor pickupable object.
-
-  Args:
-    object_type: name of a AI2Thor pickupable object.
-
-  Returns:
-    A dict of strings to bool describing the affordances of a AI2Thor pickupable
-    object, as defined by RoboCSE.
-  """
-  cur = globals.CONN.execute('PRAGMA table_info(affordances)')
-  affordance_types = cur.fetchall()
-  affordance_types = [a[1] for a in filter(lambda a: a[2] == 'bool', affordance_types)]
-
-  aff = globals.CONN.execute(f'SELECT {", ".join(affordance_types)} FROM affordances WHERE object_type LIKE ?', (object_type.strip(),)).fetchone()
-  if aff is None:
-    return {}
-
-  return {a_type: bool(a) for a_type, a in zip(affordance_types, aff)}
-
-def robocse(object_type: str) -> Tuple[Dict[str, bool], Optional[np.ndarray]]:
+def affordances(object_type: str) -> Tuple[Dict[str, bool], Optional[np.ndarray]]:
   """
   Retrieve RoboCSE properties and embedding of a AI2Thor pickupable object.
 
@@ -232,8 +210,7 @@ def load(object_type: str) -> Dict[str, Any]:
   materials = material_properties(object_type)
   _scenes = scenes(object_type)
   _receptacles = receptacles(object_type)
-  _affordances = affordances(object_type)
-  _robocse, robocse_embedding = robocse(object_type)
+  _robocse, robocse_embedding = affordances(object_type)
   paths = walmart(object_type)
 
   return {
@@ -243,8 +220,7 @@ def load(object_type: str) -> Dict[str, Any]:
             'Material Properties': materials,
             'Default Compatible Receptacles': _receptacles,
             'paths': paths,
-            'Affordances': _affordances,
-            'RoboCSE': _robocse,
+            'Affordances': _robocse,
             'RoboCSE Embedding': robocse_embedding,
             'Conceptnet Name': conceptnet_name,
             'Conceptnet Embedding': conceptnet_embedding,
