@@ -12,6 +12,7 @@ import tqdm
 with open('init_database.sql', 'r') as f:
   CREATE_TABLES = f.read()
 
+#TODO: change the name "robocse"
 ai2thor_data = dict()
 with open('ai2thor_affordances.csv', 'r', newline='') as f:
   csv_reader = csv.reader(f)
@@ -21,7 +22,7 @@ with open('ai2thor_affordances.csv', 'r', newline='') as f:
   for name, wordnet_name, act_flag, ai2thor_robocse, _ in csv_reader:
     # AFFORDANCES.update(literal_eval(affordances))
     if ai2thor_robocse is not None and ai2thor_robocse != 'None':
-      ROBOCSE.update(literal_eval(ai2thor_robocse))
+      ROBOCSE.update(literal_eval(ai2thor_robocse.replace('-', ''))) # remove '-'
     ai2thor_data[name] = dict(
       wordnet=wordnet_name,
       robocse=literal_eval(ai2thor_robocse),
@@ -61,7 +62,7 @@ def add_conceptnet(objects):
   print('Adding conceptnet embeddings...')
   required = set([o['Conceptnet Name'].lower().strip() for o in objects])
   embeddings = []
-  with open(r'C:\Users\maxzu\Development\Python\semantic_rearrangement\zips\numberbatch-en-19.08.txt', 'r', encoding='utf-8') as f:
+  with open(r'numberbatch-en.txt', 'r', encoding='utf-8') as f:
     f.readline()
     for l in tqdm.tqdm(f):
       key, *emb = l.split()
@@ -75,7 +76,7 @@ def add_conceptnet(objects):
 def add_objects(objects):
   objects = [(o['Object Type'], o['Conceptnet Name'], ai2thor_data.get(o['Object Type'], {}).get('wordnet'),
               o['Contextual Interactions'] if o['Contextual Interactions'] != '' else None,
-              ai2thor_data.get(o['Object Type'], {}).get('flag')) for o in tqdm.tqdm(objects)]
+              ai2thor_data.get(o['Object Type'], {}).get('flag', 0)) for o in tqdm.tqdm(objects)]
   CONN.executemany('INSERT INTO objects VALUES (?, ?, ?, ?, ?)', objects)
   CONN.commit()
 
@@ -260,9 +261,11 @@ def add_affordances():
   print('Creating robocse')
   object_robocse = [[name, *(a in (o['robocse'] if o['robocse'] is not None else set()) for a in ROBOCSE)] for name, o in tqdm.tqdm(ai2thor_data.items())]
   vector_cse = np.asarray([a for _, *a in object_robocse], dtype=np.float32)
+ 
+  ''' # Removing PCA for now
   _pca = _PCA()
   _pca.find_components(vector_cse)
-  error = [_pca.reconstruction_error(i) for i in range(25)]
+  error = [_pca.reconstruction_error(i) for i in range(7)]
   plt.plot(error, marker='o')
   plt.title('Reconstruction error')
   plt.xlabel('Number of components used for reconstruction')
@@ -275,6 +278,8 @@ def add_affordances():
 
   pca = PCA(n_components=n_components)
   vector_cse = pca.fit_transform(vector_cse)
+  '''
+ 
   for i, vector in enumerate(vector_cse):
     object_robocse[i].append(vector.tobytes())
 

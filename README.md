@@ -14,6 +14,9 @@ the RoboCSE properties using PCA.
 
 
 ## Install
+
+Download the English version of numberbatch into this repository from https://github.com/commonsense/conceptnet-numberbatch and rename it as `numberbatch-en.txt`.
+
 From your terminal, with your preferred Python 3 environment enabled, run the
 following:
 
