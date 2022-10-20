@@ -3,6 +3,9 @@
 u_venv/
 other
 
+# Files
+numberbatch-en.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
