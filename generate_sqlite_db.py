@@ -21,8 +21,9 @@ with open('ai2thor_affordances.csv', 'r', newline='') as f:
   next(csv_reader)
   for name, wordnet_name, act_flag, ai2thor_robocse, _ in csv_reader:
     # AFFORDANCES.update(literal_eval(affordances))
+    ai2thor_robocse = ai2thor_robocse.replace('-', '') # remove '-'
     if ai2thor_robocse is not None and ai2thor_robocse != 'None':
-      ROBOCSE.update(literal_eval(ai2thor_robocse.replace('-', ''))) # remove '-'
+      ROBOCSE.update(literal_eval(ai2thor_robocse))
     ai2thor_data[name] = dict(
       wordnet=wordnet_name,
       robocse=literal_eval(ai2thor_robocse),
@@ -261,7 +262,6 @@ def add_affordances():
   print('Creating robocse')
   object_robocse = [[name, *(a in (o['robocse'] if o['robocse'] is not None else set()) for a in ROBOCSE)] for name, o in tqdm.tqdm(ai2thor_data.items())]
   vector_cse = np.asarray([a for _, *a in object_robocse], dtype=np.float32)
- 
   ''' # Removing PCA for now
   _pca = _PCA()
   _pca.find_components(vector_cse)
