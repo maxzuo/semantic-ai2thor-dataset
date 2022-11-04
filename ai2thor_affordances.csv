@@ -1,54 +1,39 @@
 name,wordnet,active_flag,ai2thor_20bn,ai2thor_actionable_properties
 AluminumFoil,aluminum_foil.n.01,y,"['fold-able', 'tear-able']",['Pickupable']
 Apple,apple.n.01,y,['roll-able'],"['Pickupable', ' Sliceable']"
-BaseballBat,baseball_bat.n.01,y,['hit'],['Pickupable']
 BasketBall,basketball.n.02,y,['roll-able'],['Pickupable']
-Book,book.n.01,y,"['open-close-able', 'fold-able', 'hit', 'tear-able']","['Openable', ' Pickupable']"
-Bottle,bottle.n.01,y,"['open-close-able', 'hit', 'roll-able', 'contain']","['Pickupable', ' Fillable', ' Breakable']"
-Bowl,bowl.n.01,y,"['hit', 'roll-able', 'contain']","['Pickupable', ' Receptacle', ' Fillable', ' Breakable (Some)', ' Dirtyable']"
-Box,box.n.01,y,"['open-close-able', 'hit', 'contain']","['Openable', ' Pickupable', ' Receptacle']"
+Book,book.n.01,y,"['open-close-able', 'fold-able', 'tear-able']","['Openable', ' Pickupable']"
+Bottle,bottle.n.01,y,"['open-close-able', 'roll-able', 'contain']","['Pickupable', ' Fillable', ' Breakable']"
+Bowl,bowl.n.01,y,"['roll-able', 'contain']","['Pickupable', ' Receptacle', ' Fillable', ' Breakable (Some)', ' Dirtyable']"
+Box,box.n.01,y,"['open-close-able', 'contain']","['Openable', ' Pickupable', ' Receptacle']"
 Bread,bread.n.01,y,['tear-able'],"['Pickupable', ' Sliceable']"
-ButterKnife,butter_knife.n.01,y,['hit'],['Pickupable']
-Candle,candle.n.01,y,"['hit', 'roll-able']","['Pickupable', ' Toggleable']"
-CD,compact_disk.n.01,y,['hit'],['Pickupable']
-CellPhone,cellular_telephone.n.01,y,['hit'],"['Pickupable', ' Toggleable', ' Breakable']"
+Candle,candle.n.01,y,['roll-able'],"['Pickupable', ' Toggleable']"
 Cloth,fabric.n.01,y,"['fold-able', 'tear-able', 'wring-able']","['Pickupable', ' Dirtyable']"
-Cup,cup.n.01,y,"['hit', 'roll-able', 'contain']","['Pickupable', ' Receptacle', ' Fillable', ' Breakable (Some)', ' Dirtyable']"
+Cup,cup.n.01,y,"['roll-able', 'contain']","['Pickupable', ' Receptacle', ' Fillable', ' Breakable (Some)', ' Dirtyable']"
 DishSponge,sponge.n.01,y,['wring-able'],['Pickupable']
-Dumbbell,dumbbell.n.01,y,"['hit', 'roll-able']",['Pickupable']
-Egg,egg.n.02,y,"['hit', 'roll-able']","['Pickupable', ' Sliceable', ' Breakable']"
-Fork,fork.n.01,y,['hit'],['Pickupable']
+Dumbbell,dumbbell.n.01,y,['roll-able'],['Pickupable']
+Egg,egg.n.02,y,['roll-able'],"['Pickupable', ' Sliceable', ' Breakable']"
 HandTowel,hand_towel.n.01,y,"['fold-able', 'tear-able', 'wring-able']",['Pickupable']
 Kettle,kettle.n.01,y,"['open-close-able', 'contain']","['Openable', ' Pickupable', ' Fillable']"
-KeyChain,key_ring.n.01,y,['hit'],['Pickupable']
-Knife,knife.n.01,y,['hit'],['Pickupable']
 Ladle,ladle.n.01,y,['contain'],['Pickupable']
 Laptop,laptop.n.01,y,"['open-close-able', 'fold-able']","['Openable', ' Pickupable', ' Toggleable', ' Breakable']"
 Lettuce,lettuce.n.02,y,['tear-able'],"['Pickupable', ' Sliceable']"
-Mug,mug.n.04,y,"['hit', 'contain']","['Pickupable', ' Receptacle', ' Fillable', ' Breakable', ' Dirtyable']"
-Newspaper,newspaper.n.01,y,"['fold-able', 'hit', 'tear-able', 'wring-able']",['Pickupable']
+Mug,mug.n.04,y,['contain'],"['Pickupable', ' Receptacle', ' Fillable', ' Breakable', ' Dirtyable']"
+Newspaper,newspaper.n.01,y,"['fold-able', 'tear-able', 'wring-able']",['Pickupable']
 Pan,pan.n.01,y,"['open-close-able', 'contain']","['Pickupable', ' Receptacle', ' Dirtyable']"
-PaperTowelRoll,paper_towel.n.01,y,"['hit', 'roll-able', 'tear-able']","['Pickupable', ' UsedUp']"
-Pen,pen.n.01,y,"['open-close-able', 'hit', 'roll-able']",['Pickupable']
-Pencil,pencil.n.01,y,"['hit', 'roll-able']",['Pickupable']
-PepperShaker,pepper_shaker.n.01,y,['hit'],['Pickupable']
-Pillow,pillow.n.01,y,['hit'],['Pickupable']
+PaperTowelRoll,paper_towel.n.01,y,"['roll-able', 'tear-able']","['Pickupable', ' UsedUp']"
+Pen,pen.n.01,y,"['open-close-able', 'roll-able']",['Pickupable']
+Pencil,pencil.n.01,y,['roll-able'],['Pickupable']
 Plate,plate.n.04,y,"['roll-able', 'contain']","['Pickupable', ' Receptacle', ' Breakable (Some)', ' Dirtyable']"
 Pot,pot.n.01,y,"['open-close-able', 'roll-able', 'contain']","['Pickupable', ' Receptacle', ' Fillable', ' Dirtyable']"
-Potato,potato.n.01,y,"['hit', 'roll-able']","['Pickupable', ' Sliceable', ' Cookable']"
-RemoteControl,remote_control.n.01,y,['hit'],['Pickupable']
-SaltShaker,saltshaker.n.01,y,['hit'],['Pickupable']
+Potato,potato.n.01,y,['roll-able'],"['Pickupable', ' Sliceable', ' Cookable']"
 ScrubBrush,scrub_brush.n.01,y,['wring-able'],['Pickupable']
-SoapBottle,soap_dispenser.n.01,y,"['open-close-able', 'hit', 'roll-able', 'contain']","['Pickupable', ' UsedUp (Some)']"
-Spatula,spatula.n.01,y,['hit'],['Pickupable']
-Spoon,spoon.n.01,y,"['hit', 'contain']",['Pickupable']
-SprayBottle,atomizer.n.01,y,"['open-close-able', 'hit', 'roll-able', 'contain']",['Pickupable']
-TableTopDecor,interior_decoration.n.01,y,['hit'],['Pickupable']
-TennisRacket,tennis_racket.n.01,y,['hit'],['Pickupable']
-TissueBox,tissue.n.02,y,['hit'],"['Pickupable', ' UsedUp (Some)']"
-ToiletPaper,toilet_tissue.n.01,y,"['hit', 'roll-able', 'tear-able']","['Pickupable', ' UsedUp']"
+SoapBottle,soap_dispenser.n.01,y,"['open-close-able', 'roll-able', 'contain']","['Pickupable', ' UsedUp (Some)']"
+Spoon,spoon.n.01,y,['contain'],['Pickupable']
+SprayBottle,atomizer.n.01,y,"['open-close-able', 'roll-able', 'contain']",['Pickupable']
+ToiletPaper,toilet_tissue.n.01,y,"['roll-able', 'tear-able']","['Pickupable', ' UsedUp']"
 Tomato,tomato.n.01,y,['roll-able'],"['Pickupable', ' Sliceable']"
 Towel,towel.n.01,y,"['fold-able', 'tear-able', 'wring-able']",['Pickupable']
 Vase,vase.n.01,y,"['roll-able', 'contain']","['Pickupable', ' Breakable']"
 WateringCan,watering_can.n.01,y,['contain'],"['Pickupable', ' Fillable']"
-WineBottle,wine_bottle.n.01,y,"['open-close-able', 'hit', 'roll-able', 'contain']","['Pickupable', ' Fillable', ' Breakable']"
+WineBottle,wine_bottle.n.01,y,"['open-close-able', 'roll-able', 'contain']","['Pickupable', ' Fillable', ' Breakable']"
