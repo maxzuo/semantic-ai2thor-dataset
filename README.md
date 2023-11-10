@@ -7,11 +7,10 @@ dataset, specifically for all objects with the "Pickupable" property.
 Corresponding Conceptnet numberbatch embeddings are provided, alongside the
 closest corresponding wordnet name. For each object, a "Walmart Embedding" is
 also provided, which describes the categorization of an item based on the
-[Walmart website](https://www.walmart.com). Finally, information from the
-[RoboCSE](https://adaruna3.github.io/robocse/) dataset is used to describe
-affordances. We generate an affordance vector embedding for each object off
-the RoboCSE properties using PCA.
-
+[Walmart website](https://www.walmart.com). Finally, the
+[Moving Objects dataset](https://developer.qualcomm.com/software/ai-datasets/something-something)
+is distilled to  generate ground-truth object affordances. We generate a binary affordance vector
+embedding for each object.
 
 ## Install
 From your terminal, with your preferred Python 3 environment enabled, run the
